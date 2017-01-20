@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="build/main.css">
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="build/main.css">
   </head>
+	
+	<body>
+	  
+		<div class="slider-box">
+			<div class="slide fade">
+				<div class="slide-number">1/3</div>
+				<img class="slider-img" src="src/images/1.png" alt="slider img">
+				<p class="slider-text">I`m your favorite slider!</p>
+			</div>
+			<div class="slide fade">
+				<div class="slide-number">2/3</div>
+				<img class="slider-img" src="src/images/2.png" alt="slider img">
+				<p class="slider-text">I`m your favorite slider!</p>
+			</div>
+			<div class="slide fade">
+				<div class="slide-number">3/3</div>
+				<img class="slider-img" src="src/images/3.jpg" alt="slider img">
+				<p class="slider-text">I`m your favorite slider!</p>
+			</div>
+			
+			<a class="prev" onclick="plusSlides(-1)">&#10094</a>
+			<a class="next" onclick="plusSlides(1)">&#10095</a>
+			
+			<div class="slider-dots">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+		</div>
 
-  <body>
-    <h1 class="e">Hello</h1>
 
-    <script src="http://localhost:35729/livereload.js"></script>
-  </body>
+		<script src="http://localhost:35729/livereload.js"></script>
+		<script src="build/production.js"></script>
+	</body>
 </html>
